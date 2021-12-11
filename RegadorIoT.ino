@@ -98,6 +98,7 @@ pinMode(LUZ, OUTPUT);
 Serial.println("Lendo o sensor de umidade... ");
 int16_t umidade = calibraSensor();
 
+// Leitura do sensor de nível
  sensorNivel = digitalRead(NIVEL);
  Serial.print ("Sensor de nível: ");
  Serial.println (sensorNivel);
@@ -166,6 +167,7 @@ minute = 0;
 
 lastTick = 0; 
 
+// inicia ciclo de 2 horas
 while(hora < 2) {
 
 // contabiliza segundos
@@ -399,14 +401,14 @@ int sensorVal = digitalRead(5);
        }
 
     // reinicia a contagem do tempo apos 12 horas
-    if((totalMin >= 720) || (totalMinClaro == 0)) {
+    if(totalMin >= 720) {
       Serial.println("Reset e envia configuração AT+CFGRCZ=2");
       reset_HT();                // Gera o Reset de hardware no HT32SX
      
       delay(8000);               //delay 8 segundos 
       serial_HT.print("AT+CFGRCZ=2;"); // Configura HT32SX para Região RCZ2
       
-    Serial.println("12 horas ou totalMinClaro = 0...reiniciando a contagem !");
+    Serial.println("12 horas...reiniciando a contagem !");
     totalMin = 0; 
     totalMin1 = 0;  
     totalMinClaro = 0;
