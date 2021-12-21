@@ -1,4 +1,5 @@
 PlantaIoT
+
 Projeto utilizando a placa Edukit Redfox
 
 O cultivo de plantas saudáveis exige cuidados constantes que nem sempre podem ser mantidos. Esse projeto de monitoramento de plantas IoT almeja prover, de forma automática e monitoramento remoto, alguns cuidados básicos como a irrigação e o fornecimento de luz em volumes suficientes para o cultivo apropriado de plantas em pequenos espaços como vasos e canteiros, encontrando aplicações em domótica, hortas, fazendas urbanas e cidades inteligentes.
