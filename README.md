@@ -54,7 +54,7 @@ TagoIO
 
 Mais detalhes sobre esta implementação:
 
-https://docs.google.com/document/d/1g7NLhWFB9o9hXnnX7ZcXAEUDuXvemmCoC8LvZ-SXCOM/edit?usp=sharing
+https://drive.google.com/file/d/1cJEePLoJAt0aTmvFVHt-Wwz2sbts0gME/view?usp=sharing
 
 autor: Mauricio Santos Pupo
 
